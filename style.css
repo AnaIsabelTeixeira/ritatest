@@ -1,0 +1,245 @@
+/*olá! bem vindos, fiz um rset pq isto vem já com ideias*/
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgb(238, 238, 236);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*telefona para me encontrares*/
+
+h1,
+h2,
+h4 {
+  font-family: "inter tight", "helvetica", sans-serif;
+  font-size: 2em;
+}
+
+h5 {
+  font-family: "inter tight", "helvetica", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+figcaption {
+  padding-left: 50%;
+  padding-top: 1em;
+  width: 100%;
+}
+
+figure {
+  padding-bottom: 6em;
+  margin: 0;
+  position: relative;
+}
+
+h6 {
+  font-family: "inter tight", "helvetica", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  padding-bottom: 1.5em;
+}
+
+h6::before {
+  content: "↑";
+  margin-left: -20px;
+  margin-right: 5px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0.8;
+  padding: 1em;
+  z-index: 5;
+}
+
+main {
+  padding: 5em 0em 1em 0em;
+  position: relative;
+
+}
+
+#titulo {
+font-size: large;
+position: absolute;
+padding: 1.45em 0em 0em 0em; 
+top: 0;
+left: 50vw;
+}
+
+#titulo h6::before {
+  content: none;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#proj {
+ padding: 12em 1em 6em 1em;
+}
+
+#proj img{
+  padding-top: 3em;
+  padding-bottom:2em ;
+ }
+
+#proj > p{
+padding-top: 1em;;
+
+}
+
+.front {
+  z-index: 10;
+}
+
+#p2img {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#p3img {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.indextoggle #transpwhite, .abouttoggle #transpwhite {
+position: fixed;
+top: 0;
+bottom: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(255, 255, 255, 0.763);
+}
+
+#footerNav {
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#footerNav nav,
+#footerNav div {
+  flex: 50%;
+}
+
+#footerNav div {
+  text-align: right;
+  
+}
+
+#circle {
+  width: 17px;
+  height: 17px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: rgb(255, 0, 242);
+  position: absolute;
+  bottom: -0.2em;
+  right: -0.4em;
+  z-index: -100;
+  
+}
+#circle.circlept {
+  top: 0.25em;
+  left: -0.4em;
+  
+}
+ #langtoggle {
+ position: relative;
+ width: max-content;
+ float: right;
+ }
+
+.hidden {
+  display: none;
+}
+
+#collapsiblefooter {
+  line-height: 0.8;
+  padding: 0.4em 1em 0.4em 1em;
+  background-color: rgb(255, 0, 242);
+  color: white;
+}
+
+.abouttoggle #collapsiblefooter {
+  background-color: rgb(58, 233, 0);
+  height: 65vh;
+  position: relative;
+}
+
+.indextoggle #collapsiblefooter {
+  background-color: rgb(255, 72, 0);
+  height: 55vh;
+  position: relative;
+}
+
+.aboutindextext p, .aboutindextext li{
+font-size: 2em;
+line-height: 1.05;
+
+}
+
+.aboutindextext {
+position: absolute;
+bottom: 1em;
+right: 1em;
+left: 1em;
+}
+
+#aboutbutton:active, #indexbutton:active{
+  text-decoration: line-through;
+}
